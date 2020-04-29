@@ -1,0 +1,30 @@
+<svg id="Logo" xmlns="http://www.w3.org/2000/svg" width="127.5" height="108" viewBox="0 0 42.5 36">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #949494;
+        stroke-width: 1px;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        font-size: 14px;
+        font-family: Avenir;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_2_copy" data-name="Rectangle 2 copy" class="cls-1" x="0.5" y="0.5" width="35" height="35"/>
+  <path id="Rectangle_2_copy_2" data-name="Rectangle 2 copy 2" class="cls-2" d="M204.732,92.995l16.274,16.273-16.739,16.738-16.273-16.273Z" transform="translate(-179.5 -91.5)"/>
+  <text id="A" class="cls-3" x="21.02" y="23.004">A</text>
+</svg>
