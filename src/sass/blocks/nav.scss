@@ -1,0 +1,81 @@
+
+.nav-wrapper {
+    padding-top: 30px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.nav {
+    display: none;
+}
+
+.nav__item {
+
+    color: #a8a8a8;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin-right: 80px; 
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &--active,
+    &:hover,
+     &:focus,
+      &:active{
+        color: #181818;
+        text-decoration: none;
+        font-weight: 600;
+    } 
+}
+
+// для ширины экрана от 620px 
+@media (min-width: 620px) {
+
+    .nav {
+        display: block;
+    }
+
+    .nav-wrapper {
+        padding-top: 50px;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 100px;
+
+    }
+
+}
+
+// для ширины экрана 1460px
+@media (min-width: 1460px) {
+
+    .nav-wrapper {
+        width: 1440px;
+
+    }
+
+    .nav-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 92px;
+        justify-content: space-between;
+        margin-bottom: 220px;
+
+    }
+
+}
+
+
+ 

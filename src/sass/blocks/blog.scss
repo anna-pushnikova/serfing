@@ -1,0 +1,146 @@
+
+
+.recent-blogs {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+.blog-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    align-items: center;
+    width: 100%;
+
+    &:last-child {
+        margin-bottom: 35px;
+        flex-direction: column-reverse;
+    }
+}
+
+
+.blog-item-content {
+    max-width: 523px;
+
+}
+
+
+
+.blog-item__header {
+    margin-top: 15px;
+
+    font-family: 'Playfair Display Italic';
+    font-size: 28px;
+    letter-spacing: 0.33px;
+    margin-bottom: 15px;
+    font-weight: 300;
+
+}
+
+.blog-item__desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.9;
+    letter-spacing: 0.06px;
+    margin-bottom: 15px;
+    color: #464646;
+
+    p {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+}
+
+.blog-item__readmore {
+    font-family: 'Avenir LT Heavy';
+    font-size: 16px;
+    height: 52px;
+    font-weight: 700;
+    letter-spacing: 0.06px;
+    padding: 18px 30px;
+    border: 1px solid #e5e5e5;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    color: inherit;
+
+
+    &:hover {
+        text-decoration: none;
+        background: #000;
+        color: #fff;
+    }
+    
+}
+
+@media (min-width: 900px) {
+
+    .blog-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        align-items: center;
+    
+        &:last-child {
+            flex-direction: row;
+            margin-bottom: 100px;
+
+            .blog-item-content {
+                margin-right: 20px;
+                margin-left: 0 ;
+            }
+        
+        }
+    }
+
+    .blog-item-content {
+        margin-left: 20px;
+    }
+
+
+}
+
+// для ширины экрана 1460px
+@media (min-width: 1280px) {
+
+    .recent-blogs {
+        max-width: 1096px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .blog-item {
+        margin-bottom: 190px;
+
+        &:last-child {
+            margin-bottom: 230px;
+        }
+    }
+
+    .blog-item-content {
+        width: 450px;
+    
+    }
+
+    .blog-item__header {
+        margin-top: 0;
+        margin-bottom: 25px;
+
+        font-size: 40px;
+    
+    }
+
+    .blog-item__desc {
+        margin-bottom: 35px;
+    }
+}

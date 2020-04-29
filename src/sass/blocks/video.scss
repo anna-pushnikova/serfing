@@ -1,0 +1,133 @@
+
+.video {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video--title {
+    @extend .header-title-2;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.video-item {
+    margin-bottom: 36px;
+    position: relative;
+    overflow: hidden;
+
+
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.play-icon {
+    width: 56px;
+    height: 56px;
+    background: #fff;
+    border-radius: 60px;
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: '';
+        top: 41%;
+        left: 47%;
+        width: 0;
+        height: 0;
+        border-top: 6px solid transparent;
+        border-left: 8px solid #000;
+        border-bottom: 6px solid transparent;
+    }
+}
+
+.video-item .play-icon {
+    position: absolute;
+    left: -10px;
+    bottom: -15px;
+}
+
+.video-center {
+    position: relative;
+    order: -1;
+    margin-bottom: 30px;
+    margin-left: -20px;
+    margin-right: -20px;
+
+    
+
+}
+ 
+.video-center .play-icon {
+    position: absolute;
+    left: 24px;
+    bottom: 32px;
+}
+
+@media (min-width: 620px) {
+
+    .video--title {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .video {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .video-item {
+        margin-right: 20px;
+        margin-bottom: 0;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+
+}
+
+// для ширины экрана 1460px
+@media (min-width: 1280px) {
+
+    .video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 280px;
+        margin-bottom: 0;
+
+    }
+
+    .video-item {
+        margin-bottom: 30px;
+        margin-right: 0;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+    }
+
+    .video-center {
+        order: 0;  
+        margin-bottom: 0; 
+        margin-right: 15px; 
+        margin-left: 15px;
+
+    }
+
+    .video--title {
+        text-align: left;
+        font-size: 36px;
+    }
+
+}

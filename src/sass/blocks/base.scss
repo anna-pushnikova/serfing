@@ -1,0 +1,125 @@
+
+html, body {
+    width:100%;
+    overflow-x:hidden;
+}
+
+body {
+    font-family: 'Avenir LT Book', sans-serif;
+    background-color: #ffffff; 
+    color: #000000;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+
+.header-title-2 {
+    font-family: 'Playfair Display Regular', serif;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0.29px;
+    margin-bottom: 45px;
+
+}
+
+.container {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 60px;
+    
+}
+
+.header-1 {
+    font-family: 'Playfair Display Regular', serif;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 0.41px;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 85px;
+    width: 100%;
+
+
+    .mb70 {
+        margin-bottom: 70px;
+    }
+
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn { 
+    height: 56px;
+    font-family: 'Avenir LT Heavy';
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 40px;
+    border: 1px solid #e5e5e5;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+    color: inherit;
+
+
+    &:hover {
+        text-decoration: none;
+        background: #000;
+        color: #fff;
+    }
+}
+
+.cta-section {
+    margin-bottom: 45px;
+}
+
+
+@media (min-width: 620px) {
+
+    .header-1 {
+
+        font-size: 36px;
+
+    }
+
+    .header-1__cta {
+        padding: 20px 0;
+    }
+
+
+
+}
+
+// для ширины экрана 1460px
+@media (min-width: 1280px) {
+
+    .header-1 {
+        width: 1050px;
+        margin: 45px auto;
+        font-size: 56px;
+
+    }
+
+    .container {
+        margin-top: 0;
+    }
+
+    .cta-section {
+        margin-bottom: 145px;
+    }
+
+    .header-1__cta {
+        padding: 0;
+    }
+     
+}
